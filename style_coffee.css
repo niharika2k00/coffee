@@ -1,0 +1,292 @@
+body{
+	margin: 0px;
+	padding: 0px;
+	font-family: sans-serif;
+	/*color: white;*/
+}
+section.sec1{
+	width: 100%;
+	height: 100vh;
+	font-color:white;
+	/*padding-bottom: 28px;*/
+	margin-bottom: 34px;         /*maintains the gap betn the divider and the pic*/
+	box-sizing: border-box;
+	background-image:url('pic1.jpeg');
+	background-size: cover;
+	clip-path: polygon(0% 0%,100% 0%,100% 100%,0% 90%);
+	}
+nav{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height:70px;
+    background:rgba(0,0,0,.3);
+    padding: 0 10px 20px 0;
+    box-sizing: border-box;
+
+	}
+nav .heading{
+		float: left;
+		/*height: 100%;*/
+		line-height: 60px;
+		/*font-size: 30px;*/
+	}
+nav .heading h1{
+	position: absolute;
+	/*padding: 0px;*/
+    margin: 0px;
+	padding: 20px 0px 60px 20px;
+	/*text-decoration: underline; */
+	font-family:segoe script;
+	/*color: white;*/
+	font-size:42px;
+	background:  linear-gradient(120deg, gold /*#fee140*/, deeppink/*#fa709a*/);  /* fot text_gradient*/
+	-webkit-text-fill-color:transparent;
+	-webkit-background-clip:text;
+	/*background: -webkit-linear-gradient(120deg,#fee140, #fa709a);*/
+	}
+
+nav ul{
+		float: right;
+		color: white;
+		display: flex;
+		margin: 0px;
+	    padding: 0px;
+		}
+nav ul li{
+		list-style: none;
+		}	
+nav ul li a{
+		position: relative;
+		display: block;
+		height: 70px;             /* height:70px; in nav & line-height: 70px; in nav heading*/
+		line-height: 70px;
+		padding:0px 15px 10px 15px;
+		/*padding: 0px;
+		margin: 0px;*/
+		color: white;
+	    font-size: 16px; 
+	    box-sizing: border-box;
+	    text-decoration: none;          /* removes the underline for every li in the nav bar*/
+	    transition: .2s all;  
+	    }
+
+/*.sec1 nav ul li a:hover{
+	background-color: palegoldenrod;     HOVER_EFFECT is wide,same size as that of the nav bar
+	background-color: burlywood;
+
+} */
+.sec1 nav ul li a:hover{
+	color: orangered;                 /* HOVER_EFFECT only for the letters*/
+}
+
+
+.tagline {
+	position: absolute;
+	top: 34%;
+	left: 18%;
+	/*transform: translate(50%,50%);*/
+}
+.tagline p{
+	font-family: Ink free/* Italic*//*ScriptS*//**//*segoe script*/;
+	color: orangered;
+	font-weight:bolder;
+	font-size: 48px;
+	/*padding-top: 200px;*/
+}
+
+button  {
+	padding: 0px 8px 0px 8px;
+	font-family: sans-serif;
+	/*font-color:red;*/
+	border:3px solid gold   /*orangered*/  ;
+	cursor: pointer;
+	transition: 0.2;
+}
+.btn{
+	position: absolute;
+	top:80%;      /* for shifting and placing the txt and the block in a certain position*/
+	left:80%;
+	border-radius: 16px;
+	background-color: black;
+	letter-spacing: 0.5px;
+	color:white;
+}
+.lower_btn {
+	position:absolute;
+	top:90%;      
+	left:82%;
+	background-color:bisque ;
+	border-radius: 16px;
+}
+
+.sec1 button:hover{
+	/*background-color:orangered;*/   /*#15f4ee for normal hover*/
+	box-shadow: 0px 1px 10px 0 gold    inset,  0px 1px 10px 0 gold   ;  /*for neon light hover*/
+}
+
+
+/*********************************section 2*****************************************/
+
+section.sec2{
+	width: 100%;
+	height: 100%;
+	/*background-color:lavenderblush;*/
+	box-sizing: border-box;
+	background-image: linear-gradient(178deg, rgba(244,164,96,0), rgba(244,164,96,1))
+} 
+.sec2 h2{
+	color:orange;
+	/*text-shadow: 2px 2px peru;*/
+	text-shadow: 0 0 3px #800000 ,0 0 6px #D2691E;
+	font-family: sans-serif;
+	padding:1px 20px 2px 50px;
+	font-size: 30px;
+	/*margin: 30px;*/
+}
+p{
+	padding:8px 20px 15px 50px;
+	text-align: justify;
+}
+/**********************************section 3************************************/
+/* Images between <hr> tag */
+
+hr.style-six {
+padding: 0;
+border: none;
+height: 1px;
+background-image: -webkit-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0));
+background-image: -moz-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0));
+background-image: -ms-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0));
+background-image: -o-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0));
+color: #333;
+text-align: center;
+}
+hr.style-six:after {
+content:" ";
+display: inline-block;
+position: relative;
+top: -2.1em;
+font-size: 1.5em;
+padding: 19px 1.75em;
+background: #fff url(image/cartoon_1.png) no-repeat scroll center;
+background-size: 90px 90px;
+height: 50px;
+}
+
+
+/*  Background Image */
+
+/*hr.type_5 {
+border: 0;
+height: 55px;
+background-image: url(image/type_5.png);
+background-repeat: no-repeat;
+}*/
+section.sec3{
+	width: 100%;
+	height: 100vh;
+	margin-top: 30px;
+	background-color: black;
+	/*clip-path: polygon(0% 0%,100% 0%,100% 100%,0% 90%);*/
+	/*box-sizing: border-box;*/
+	clip-path: polygon(0% 0%,
+		               100% 0%,
+		               90% 10%,
+		               100% 20%,
+		               90% 30%,
+		               100% 40%,
+		               90% 50%,
+		               100% 60%,
+		               90% 70%,
+		               100% 80%,
+		               90% 90%,
+		               100% 100%,
+		               0% 100%,
+		               10% 90%,
+		               0% 80%,
+		               10% 70%,
+		               0% 60%,
+		               10% 50%,
+		               0% 40%,
+		               10% 30%,
+		               0% 20%,
+		               10% 10%);
+	/*clip-path: ellipse(8% 50% at 99% 49%);*/
+                		                 
+	/*clip-path: polygon(0% 0%,
+		               0% 100%,
+		               100% 100%,
+		               85% 100%,
+		               100% 4%,
+		               98% 61%,
+		               85% 100%,
+		               100% 75%,
+		               83% 82%,
+		               100% 0%);   */    
+}
+.sec3 .slideshow{
+	width: 750px;
+	height: 500px;
+	overflow: hidden;
+}
+
+.sec3 .middle{
+	position: absolute;
+	top: 710px;
+	left: -15%;
+	transform: translate(60%,60%);
+}
+ .sec3  .navigation{
+ 	position: absolute;
+ 	top:  270px;
+ 	left: 22%;
+ 	/*margin-top: 800px: */
+ 	transform: translateX(70%);
+ 	transform: translateY(+900%);
+    display: flex;
+ }
+ .sec3  .bar{
+ 	width: 80px;
+ 	height: 14px;
+ 	border:2px solid orangered;
+ 	margin: 2px;
+    cursor: pointer;
+    transition:0.2s ;
+ }
+  .sec3 .navigation .bar:hover{
+  	background-color:white;
+  	box-shadow: 0px 1px 10px 0 orangered  inset,  0px 1px 10px 0 orangered;
+  } 
+ .sec3 .slideshow .pres input[name="r"]{
+  	position: absolute;
+  	visibility: hidden;
+   }
+.sec3 .pres{
+	width: 500%;
+	height: 100%;
+	display: flex;
+}   
+
+.sec3 .slide{
+	width:20%;
+	transition: 0.2s;
+}
+.sec3 .slide img{
+	width: 100%;
+	height: 100%;
+}
+
+.sec3  #r1:checked ~ .s1{          /*no gap betn the selector*/
+	margin-left: 0%;
+    }
+.sec3  #r2:checked ~ .s1{
+	margin-left: -20%;
+    }
+.sec3  #r3:checked ~ .s1{
+	margin-left: -40%;
+    }
+.sec3  #r4:checked ~ .s1{
+	margin-left: -60%;
+    }            
